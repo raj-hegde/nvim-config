@@ -28,6 +28,11 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 
+--debug
+require("dapui").setup()
+require("dap-go").setup()
+
+require("configs.treesitter")
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
